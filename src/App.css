@@ -19,7 +19,7 @@
 }
 
 .cell img {
-    width: 70px;
+    width: 70 px;
     height: 70px;
     position: relative;
 }
@@ -38,4 +38,15 @@
 
 .white {
     background-color: #f5b082;
+}
+
+.selected {
+    background-color: #689c24;
+}
+
+.available {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(30, 206, 30);
 }
