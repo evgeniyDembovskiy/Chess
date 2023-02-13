@@ -22,6 +22,7 @@ function App() {
         const newBoard = new Board();
         newBoard.initCells();
         newBoard.addFigures();
+        setCurrentPlayer(whitePlayer);
         setBoard(newBoard);
     }
 
@@ -34,6 +35,9 @@ function App() {
             <Timer
                 restart={restart}
                 currentPlayer={currentPlayer}
+                setCurrentPlayer={setCurrentPlayer}
+                whitePlayer={whitePlayer}
+
             />
             <BoardComponent
                 board={board}
@@ -41,6 +45,16 @@ function App() {
                 currentPlayer={currentPlayer}
                 swapPlayers={swapPlayers}
             />
+            <div className='numbers'>
+                <div>8</div>
+                <div>7</div>
+                <div>6</div>
+                <div>5</div>
+                <div>4</div>
+                <div>3</div>
+                <div>2</div>
+                <div>1</div>
+            </div>
             <div>
                 <LostFigures 
                     title="Потерянные черные фигуры:" 
@@ -49,6 +63,8 @@ function App() {
                     title="Потерянные белые фигуры:" 
                     figures={board.lostWhiteFigures}/>
             </div>
+
+
         </div>
     );
 }
