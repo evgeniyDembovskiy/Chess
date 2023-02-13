@@ -50,3 +50,20 @@
     border-radius: 50%;
     background-color: rgb(30, 206, 30);
 }
+
+.turn {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.turn span {
+    font-weight: bold;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+}
